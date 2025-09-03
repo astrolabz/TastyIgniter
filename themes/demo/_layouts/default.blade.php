@@ -4,6 +4,7 @@ description: Default layout
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ App::getLocale() }}">
 <head>
+    <title>@lang($this->page->title)</title>
     @themePartial('head')
 </head>
 <body class="bg-light d-flex flex-column h-100 {{ $this->page->bodyClass }}" style="font-family: 'Roboto', sans-serif;">
