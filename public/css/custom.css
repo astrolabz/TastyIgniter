@@ -1,0 +1,83 @@
+/* Custom styles for ModernRestaurant theme */
+.bg-dark {
+    background-color: #8B0000 !important; /* Rosso scuro */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #8B0000 0%, #000 100%);
+    min-height: 60vh;
+}
+
+/* Cards Shadcn-style */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Carousel */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #f8f9fa;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+.dark-mode .card {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.dark-mode .text-white {
+    color: #ffffff !important;
+}
+
+.dark-mode .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.dark-mode .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
