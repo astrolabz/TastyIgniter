@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'defaultTheme' => 'igniter-orange',
+    'defaultTheme' => 'devishal',
 
     /*
     |--------------------------------------------------------------------------

@@ -15,7 +15,17 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        // Run stock refresh daily at 3:00 AM
+        $schedule->command('stock:refresh')
+            ->dailyAt('03:00')
+            ->timezone('Europe/Amsterdam')
+            ->emailOutputOnFailure(config('mail.from.address'));
+        
+        // Check freshness and send alerts twice daily
+        $schedule->command('freshness:check --notify')
+            ->twiceDaily(6, 14) // 6:00 AM and 2:00 PM
+            ->timezone('Europe/Amsterdam')
+            ->emailOutputOnFailure(config('mail.from.address'));
     }
 
     /**
